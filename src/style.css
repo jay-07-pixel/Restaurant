@@ -115,7 +115,11 @@ a:hover { color:var(--gold-light); }
   background:url('/images/spices.png') center/cover no-repeat;
   opacity:.05; filter:blur(40px); z-index:0;
 }
-.hero-content { position:relative; z-index:10; text-align:center; max-width:920px; padding:40px 20px; margin-top: 0; }
+.hero-content { position:relative; z-index:10; text-align:center; max-width:920px; padding:40px 20px; margin-top: 0; animation: fadeUpHero 1.2s ease-out both; }
+@keyframes fadeUpHero {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 .hero-title {
   font-family:var(--font-display);
   font-size:clamp(3rem,8.5vw,7.5rem);
